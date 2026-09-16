@@ -1,0 +1,93 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+
+> gym-pwa@1.0.0 dev
+> vite
+
+
+  VITE v8.0.14  ready in 118 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+10:26:40 PM [vite] (client) hmr update /src/index.css
+10:29:38 PM [vite] (client) hmr update /src/screens/ExerciseScreen.tsx
+10:29:44 PM [vite] (client) hmr update /src/screens/ExerciseScreen.tsx
+10:29:54 PM [vite] (client) hmr update /src/index.css
+10:31:24 PM [vite] (client) hmr update /src/index.css
+10:31:34 PM [vite] (client) hmr update /src/index.css
+10:31:38 PM [vite] (client) hmr update /src/screens/HomeScreen.tsx
+10:33:59 PM [vite] (client) hmr update /src/components/Icon.tsx
+10:34:07 PM [vite] (client) hmr update /src/store.tsx, /src/screens/HomeScreen.tsx, /src/screens/ExerciseScreen.tsx, /src/components/AddExerciseModal.tsx
+10:34:07 PM [vite] (client) hmr invalidate /src/store.tsx Could not Fast Refresh ("todayISO" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+10:34:07 PM [vite] (client) page reload src/store.tsx
+10:34:31 PM [vite] (client) hmr update /src/store.tsx, /src/screens/HomeScreen.tsx, /src/screens/ExerciseScreen.tsx, /src/components/AddExerciseModal.tsx
+10:34:31 PM [vite] (client) hmr invalidate /src/store.tsx Could not Fast Refresh ("todayISO" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+10:34:31 PM [vite] (client) page reload src/store.tsx
+10:36:14 PM [vite] (client) hmr update /src/index.css
+10:41:05 PM [vite] (client) hmr update /src/components/Icon.tsx
+10:41:05 PM [vite] (client) ✨ new dependencies optimized: @tabler/icons-react
+10:41:05 PM [vite] (client) ✨ optimized dependencies changed. reloading
+10:41:19 PM [vite] (client) hmr update /src/store.tsx, /src/screens/HomeScreen.tsx, /src/screens/ExerciseScreen.tsx, /src/components/AddExerciseModal.tsx
+10:41:19 PM [vite] (client) hmr invalidate /src/store.tsx Could not Fast Refresh ("todayISO" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+10:41:19 PM [vite] (client) page reload src/store.tsx
+10:46:28 PM [vite] (client) hmr update /src/components/Icon.tsx
+10:46:28 PM [vite] (client) error while updating dependencies:
+Error: ENOENT: no such file or directory, open '/Users/jayant.dawani/gymapp/gym-pwa/node_modules/@tabler/icons-react/dist/esm/tabler-icons-react.mjs'
+    at Object.readFileSync (node:fs:435:20)
+    at extractExportsData (file:///Users/jayant.dawani/gymapp/gym-pwa/node_modules/vite/dist/node/chunks/node.js:31913:26)
+    at async file:///Users/jayant.dawani/gymapp/gym-pwa/node_modules/vite/dist/node/chunks/node.js:31680:23
+    at async Promise.all (index 0)
+    at async prepareRolldownOptimizerRun (file:///Users/jayant.dawani/gymapp/gym-pwa/node_modules/vite/dist/node/chunks/node.js:31678:2)
+10:46:28 PM [vite] (client) [console.error] [vite] Failed to reload /src/components/Icon.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:46:28 PM [vite] (client) [console.error] [vite] Failed to reload /src/components/Icon.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:46:29 PM [vite] (client) [optimizer] bundling dependencies...
+10:46:37 PM [vite] (client) hmr update /src/store.tsx, /src/screens/HomeScreen.tsx, /src/screens/ExerciseScreen.tsx, /src/components/AddExerciseModal.tsx
+10:46:37 PM [vite] (client) [console.error] [vite] Failed to reload /src/screens/HomeScreen.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:46:37 PM [vite] (client) [console.error] [vite] Failed to reload /src/screens/HomeScreen.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:46:37 PM [vite] (client) hmr invalidate /src/store.tsx Could not Fast Refresh ("todayISO" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+10:46:37 PM [vite] (client) page reload src/store.tsx
+10:46:37 PM [vite] (client) [Unhandled error] Error: useStore must be used within StoreProvider
+ > useStore src/store.tsx:181:18
+    179 |  export function useStore(): StoreValue {
+    180 |    const ctx = useContext(StoreContext);
+    181 |    if (!ctx) throw new Error("useStore must be used within StoreProvider");
+        |                    ^
+    182 |    return ctx;
+    183 |  }
+ > HomeScreen src/screens/HomeScreen.tsx?t=1780247479941:14:51
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+
+10:46:37 PM [vite] (client) [console.warn] An error occurred in the <HomeScreen> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+10:46:37 PM [vite] (client) [Unhandled error] Error: useStore must be used within StoreProvider
+ > useStore src/store.tsx:181:18
+    179 |  export function useStore(): StoreValue {
+    180 |    const ctx = useContext(StoreContext);
+    181 |    if (!ctx) throw new Error("useStore must be used within StoreProvider");
+        |                    ^
+    182 |    return ctx;
+    183 |  }
+ > HomeScreen src/screens/HomeScreen.tsx?t=1780247479941:14:51
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+
+10:46:37 PM [vite] (client) [console.warn] An error occurred in the <HomeScreen> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
