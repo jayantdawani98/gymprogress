@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight, Plus, Trash2 } from "lucide-react";
 import { useStore } from "../store";
@@ -12,12 +12,14 @@ export function HomeScreen() {
   const { exercises, deleteExercise, maxWeight, expandedMuscles, toggleMuscle, homeFocusExerciseId } =
     useStore();
   const [addMuscle, setAddMuscle] = useState<MuscleId | null>(null);
+  const scrolledToFocus = useRef<string | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!homeFocusExerciseId) return;
+    if (!homeFocusExerciseId || scrolledToFocus.current === homeFocusExerciseId) return;
     const el = document.getElementById(`exercise-${homeFocusExerciseId}`);
     if (!el) return;
+    scrolledToFocus.current = homeFocusExerciseId;
     el.scrollIntoView({ block: "center", behavior: "smooth" });
   }, [homeFocusExerciseId, expandedMuscles]);
 
