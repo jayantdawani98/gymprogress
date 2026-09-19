@@ -8,8 +8,9 @@ function clamp(n: number, lo: number, hi: number) {
 }
 
 /**
- * A vertical scroll picker (wheel) for choosing weight. Scroll to a value and
- * it snaps; the centered value is the selection.
+ * Vertical scroll picker (wheel) used for reps and weight. Scroll to a value
+ * and it snaps; the centered value is the selection.
+ * Exercise logging uses step 1 for reps and 0.5 kg for weight.
  */
 export function WeightScroller({
   value,

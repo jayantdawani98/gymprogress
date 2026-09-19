@@ -15,7 +15,8 @@ sync + the buddies/scoreboard feature.
 - Add / delete exercises under a muscle
 - Workout timer with Start / End and a live stopwatch
 - Per-exercise **Set / Reps / Weight** table (default 3 rows, add/remove)
-- A small **vertical weight slider** on each set
+- Vertical **scroll pickers** for reps (step 1) and weight (**0.5 kg** steps)
+- After logging an exercise, **Back** reopens that muscle and scrolls to it
 - Pick any date; **Save** records that day's sets
 - **Progress graph** of each day's heaviest set over time
 - **History by day** — tap to edit a day, delete a day

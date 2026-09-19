@@ -115,6 +115,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       },
 
       rememberHomeFocus: (exerciseId, muscle) => {
+        // Keep this muscle open and scroll back to this exercise after Back.
         setHomeFocusExerciseId(exerciseId);
         setExpandedMuscles((prev) => (prev.includes(muscle) ? prev : [...prev, muscle]));
       },

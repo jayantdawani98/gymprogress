@@ -15,6 +15,7 @@ export function HomeScreen() {
   const scrolledToFocus = useRef<string | null>(null);
   const navigate = useNavigate();
 
+  // Restore the muscle/exercise the user just logged when they tap Back.
   useEffect(() => {
     if (!homeFocusExerciseId || scrolledToFocus.current === homeFocusExerciseId) return;
     const el = document.getElementById(`exercise-${homeFocusExerciseId}`);

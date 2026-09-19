@@ -122,6 +122,7 @@ export function ExerciseScreen() {
             <div className="set-row" key={i}>
               <span className="col-set set-number">{i + 1}</span>
               <span className="col-reps">
+                {/* Reps wheel: whole numbers 1–50 */}
                 <WeightScroller
                   value={row.reps}
                   onChange={(v) => update(i, "reps", v)}
@@ -132,6 +133,7 @@ export function ExerciseScreen() {
                 />
               </span>
               <span className="col-weight">
+                {/* Weight wheel: 0.5 kg increments */}
                 <WeightScroller
                   value={row.weight}
                   onChange={(v) => update(i, "weight", v)}
